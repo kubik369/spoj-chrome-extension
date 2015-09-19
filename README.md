@@ -1,5 +1,3 @@
-# spoj-chrome-extension
-
 SPOJ Tweaks
 ===========
 
