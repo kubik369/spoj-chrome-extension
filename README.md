@@ -1,7 +1,7 @@
 SPOJ Tweaks
 ===========
 
-Chrome extension for small tweaks on the SPOJ website
+Chrome extension for small tweaks on the SPOJ website, adjusted for the new layout of the site, heavily based on the previous work of [pulkitsharma07](https://github.com/pulkitsharma07/Better-SPOJ).
 
 Features
 --------
