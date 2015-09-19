@@ -1,0 +1,20 @@
+{
+  "name": "SPOJ Tweaks",
+  "version": "1.0",
+  "description": "Tweaks for the SPOJ site",
+  "background": {"page": "background.html"},
+  "manifest_version": 1,
+  "author": "Jakub Šimo, Pulkit Sharma",
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "default_icon": "icon.png"
+  },
+   "icons": {"20":"icon.png",
+       "128":"icon128.png"
+  },  
+  "content_scripts": [ {
+    "js": [ "jquery-1.11.1.min.js", "background.js" ],
+    "matches": [ "http://www.spoj.com/*"]
+  }]
+  
+}
