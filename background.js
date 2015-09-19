@@ -48,7 +48,9 @@ if(matchExact(prob_page,loc))
     //add attributes as other cells
     problem_table.rows[0].cells[4].setAttribute("width", "50");
     problem_table.rows[0].cells[4].setAttribute("class", "text-center valign-middle");
-    problem_table.rows[0].cells[4].innerHTML = "<a title=\"The number of points you will get for solving this problem.\">POINTS</a>";
+    problem_table.rows[0].cells[4].innerHTML = problem_table.rows[0].cells[5].innerHTML;
+    problem_table.rows[0].cells[4].getElementsByTagName("a")[0].innerHTML = "POINTS";
+    problem_table.rows[0].cells[4].getElementsByTagName("a")[0].setAttribute("title", "The number of points you will get for solving this problem. Click here to sort.");
      for(i = 1; i <= num-1 ; i++){
       //get the problem name DOM element
       //prob_name = problem_table.rows[i].cells[prob_name_ind].getElementsByTagName("b")[0];
