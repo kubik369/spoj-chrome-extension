@@ -8,9 +8,11 @@ Chrome extension for small tweaks on the SPOJ website
 Features
 --------
 * Classical problems have a Points column right next to Users column in the problemset.
+
 ![Points next to the problems.](https://github.com/kubik369/spoj-chrome-extension/blob/master/problemset.png "Classical problems problem set.")
 
 * Points are displayed under the tags of the classical problem, challenges have the number of users who solved the problem.
+
 ![Points displayed on the problem page.](https://github.com/kubik369/spoj-chrome-extension/blob/master/problem.png "Classical problem.")
 
 Features I want to add
