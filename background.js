@@ -39,13 +39,24 @@ if(matchExact(prob_page,loc))
     //Number of rows
     num = problem_table.rows.length;
     //For all the rows
-    problem_table.rows[0].cells[4].getElementsByTagName("a")[0].innerHTML = "POINTS";
+    //problem_table.rows[0].cells[4].getElementsByTagName("a")[0].innerHTML = "POINTS";
+    //insert a whole new column
+    for(var i = 0;i < num;i++)
+      problem_table.rows[i].insertCell(4);
+    //change the normal cell to header cell
+    problem_table.rows[0].cells[4].outerHTML = problem_table.rows[0].cells[4].outerHTML.replace("td", "th");
+    //add attributes as other cells
+    problem_table.rows[0].cells[4].setAttribute("width", "50");
+    problem_table.rows[0].cells[4].setAttribute("class", "text-center valign-middle");
+    problem_table.rows[0].cells[4].innerHTML = "<a title=\"The number of points you will get for solving this problem.\">POINTS</a>";
      for(i = 1; i <= num-1 ; i++){
       //get the problem name DOM element
       //prob_name = problem_table.rows[i].cells[prob_name_ind].getElementsByTagName("b")[0];
       
       //get the users DOM element
       //prob_users = problem_table.rows[i].cells[prob_users_ind].getElementsByTagName("a")[0];
+      problem_table.rows[i].cells[4].outerHTML = problem_table.rows[i].cells[5].outerHTML;
+      problem_table.rows[i].cells[4].innerHTML = problem_table.rows[i].cells[5].innerHTML;
       prob_users = problem_table.rows[i].cells[4].getElementsByTagName("a")[0].innerHTML;
       //console.log(problem_table.rows[i].cells[4].getElementsByTagName("a")[0].innerHTML);
       //Get points
